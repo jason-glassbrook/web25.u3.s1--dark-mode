@@ -1,11 +1,17 @@
+/// external modules ///
 import React, { useState } from 'react';
 
+/***************************************
+  COMPONENT
+***************************************/
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState (false);
+
   const toggleMode = e => {
     e.preventDefault ();
     setDarkMode (!darkMode);
   };
+
   return (
     <nav className="navbar">
       <h1>Crypto Tracker</h1>
@@ -19,4 +25,5 @@ const Navbar = () => {
   );
 };
 
+/**************************************/
 export default Navbar;

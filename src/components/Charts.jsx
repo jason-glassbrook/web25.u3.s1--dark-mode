@@ -1,6 +1,12 @@
+/// external modules ///
 import React from "react";
+
+/// internal modules ///
 import Chart from "./Chart";
 
+/***************************************
+  COMPONENT
+***************************************/
 const Charts = ({ coinData }) => {
   return (
     <div className="charts">
@@ -17,4 +23,6 @@ const Charts = ({ coinData }) => {
     </div>
   );
 };
+
+/**************************************/
 export default Charts;

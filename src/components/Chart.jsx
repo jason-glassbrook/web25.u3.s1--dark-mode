@@ -1,3 +1,4 @@
+/// external modules ///
 import React from "react";
 import moment from "moment";
 import {
@@ -9,6 +10,9 @@ import {
   Tooltip
 } from "recharts";
 
+/***************************************
+  COMPONENT
+***************************************/
 const Chart = ({ sparklineData }) => {
   const formattedData = sparklineData
     .map ((price, idx) => {
@@ -37,4 +41,5 @@ const Chart = ({ sparklineData }) => {
   );
 };
 
+/**************************************/
 export default Chart;
