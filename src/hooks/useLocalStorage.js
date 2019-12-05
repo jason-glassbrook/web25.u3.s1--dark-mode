@@ -16,18 +16,12 @@ export const getLocalStorage = (key, fallback) => {
 }
 
 export const setLocalStorage = (key, value) => {
-  let status;
-
   try {
     window.localStorage.setItem (key, JSON.stringify (value));
-    status = true;
   }
   catch (error) {
     console.error ('setLocalStorage', error);
-    status = false;
   }
-  
-  return (status);
 }
 
 /***************************************
