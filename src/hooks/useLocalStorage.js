@@ -8,11 +8,17 @@ import { is } from '../tools/iffy';
   TOOLS
 //////////////////////////////////////*/
 export const getLocalStorage = (key, fallback) => {
-  const item = window.localStorage.getItem (key);
+  let value = fallback;
 
-  return (
-    is (item) ? JSON.parse(item) : fallback
-  );
+  try {
+    const item = window.localStorage.getItem (key);
+    value = is (item) ? JSON.parse(item) : fallback;
+  }
+  catch (error) {
+    console.error ('getLocalStorage', error);
+  }
+
+  return (value);
 }
 
 export const setLocalStorage = (key, value) => {
