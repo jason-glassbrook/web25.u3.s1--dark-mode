@@ -1,5 +1,5 @@
 /// external modules ///
-import React, { useState } from 'react';
+import React from 'react';
 
 /// internal modules ///
 import { useDarkMode } from '../hooks/useDarkMode';
