@@ -1,5 +1,5 @@
 /// external modules ///
-import { useState } from "react";
+import React from 'react'
 
 /// internal modules ///
 import getLocalStorage from './getLocalStorage';
@@ -10,7 +10,7 @@ import setLocalStorage from './setLocalStorage';
   HOOK
 ***************************************/
 export const useLocalStorageState = (key, initValue) => {
-  const [state, _setState] = useState (() => (
+  const [state, _setState] = React.useState (() => (
     getLocalStorage (key, initValue)
   ));
 
