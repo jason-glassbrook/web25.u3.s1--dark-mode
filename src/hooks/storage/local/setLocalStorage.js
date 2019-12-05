@@ -1,5 +1,5 @@
 /// internal modules ///
-// import iffy from '../../tools/iffy';
+// import iffy from '../../../tools/iffy';
 
 /***************************************
   HOOK
