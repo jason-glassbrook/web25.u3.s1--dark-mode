@@ -1,11 +1,14 @@
 /// external modules ///
 import React, { useState } from 'react';
 
+/// internal modules ///
+import { useDarkMode } from '../hooks/useDarkMode';
+
 /***************************************
   COMPONENT
 ***************************************/
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState (false);
+  const [darkMode, setDarkMode] = useDarkMode (false);
 
   const toggleMode = e => {
     e.preventDefault ();
