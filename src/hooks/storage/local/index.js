@@ -8,8 +8,14 @@ import setLocalStorage from './setLocalStorage';
 import useLocalStorage from './useLocalStorage';
 
 /// exports ///
-export default ({
+export default {
   getLocalStorage,
   setLocalStorage,
   useLocalStorage,
-});
+};
+
+export {
+  getLocalStorage,
+  setLocalStorage,
+  useLocalStorage,
+};
