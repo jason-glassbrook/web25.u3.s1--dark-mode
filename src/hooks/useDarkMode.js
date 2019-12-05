@@ -1,5 +1,5 @@
 /// external modules ///
-import LS from "./storage/local";
+import storage from './storage';
 
 /// internal modules ///
 // import iffy from '../tools/iffy';
@@ -12,7 +12,7 @@ import LS from "./storage/local";
   HOOK
 ***************************************/
 export const useDarkMode = (initMode) => {
-  const [mode, setMode] = LS.useState ('dark_mode', initMode);
+  const [mode, setMode] = storage.local.useState ('dark_mode', initMode);
 
   return [mode, setMode];
 };
