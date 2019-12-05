@@ -3,19 +3,17 @@
 *******************************************************************************/
 
 /// imports ///
-import getSessionStorage from './getSessionStorage';
-import setSessionStorage from './setSessionStorage';
-import useSessionStorageState from './useSessionStorageState';
+import get from './getSessionStorage';
+import set from './setSessionStorage';
+import useState from './useSessionStorageState';
 
 /// exports ///
-export {
-  getSessionStorage,
-  setSessionStorage,
-  useSessionStorageState,
+export default {
+  get,
+  set,
+  useState,
 };
 
-export default {
-  get : getSessionStorage,
-  set : setSessionStorage,
-  useState : useSessionStorageState,
-};
+export * from './getSessionStorage';
+export * from './setSessionStorage';
+export * from './useSessionStorageState';
