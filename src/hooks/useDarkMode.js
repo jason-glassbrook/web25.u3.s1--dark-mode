@@ -1,8 +1,8 @@
 /// external modules ///
-import storage from './storage';
+import storage from 'hooks/storage';
 
 /// internal modules ///
-// import iffy from '../tools/iffy';
+// import iffy from 'tools/iffy';
 
 /*//////////////////////////////////////
   TOOLS

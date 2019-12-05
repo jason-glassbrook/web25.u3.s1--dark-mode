@@ -4,7 +4,7 @@ import { useState } from "react";
 /// internal modules ///
 import getSessionStorage from './getSessionStorage';
 import setSessionStorage from './setSessionStorage';
-// import iffy from '../../../tools/iffy';
+// import iffy from 'tools/iffy';
 
 /***************************************
   HOOK

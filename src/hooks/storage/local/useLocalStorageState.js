@@ -4,7 +4,7 @@ import { useState } from "react";
 /// internal modules ///
 import getLocalStorage from './getLocalStorage';
 import setLocalStorage from './setLocalStorage';
-// import iffy from '../../../tools/iffy';
+// import iffy from 'tools/iffy';
 
 /***************************************
   HOOK

@@ -2,7 +2,7 @@
 import React from 'react';
 
 /// internal modules ///
-import { useDarkMode } from '../hooks/useDarkMode';
+import { useDarkMode } from 'hooks/useDarkMode';
 
 /***************************************
   COMPONENT
