@@ -2,7 +2,7 @@
 import { useLocalStorage } from "./storage/local";
 
 /// internal modules ///
-import { is } from '../tools/iffy';
+// import iffy from '../tools/iffy';
 
 /*//////////////////////////////////////
   TOOLS
