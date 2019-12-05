@@ -8,7 +8,7 @@ import { useDarkMode } from 'hooks/useDarkMode';
   COMPONENT
 ***************************************/
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useDarkMode (false);
+  const [darkMode, setDarkMode] = useDarkMode ('body', false);
 
   const toggleMode = e => {
     e.preventDefault ();
