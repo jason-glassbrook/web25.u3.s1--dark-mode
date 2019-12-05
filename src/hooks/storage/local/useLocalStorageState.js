@@ -9,18 +9,18 @@ import setLocalStorage from './setLocalStorage';
 /***************************************
   HOOK
 ***************************************/
-export const useLocalStorage = (key, initValue) => {
-  const [value, setValue_] = useState (() => (
+export const useLocalStorageState = (key, initValue) => {
+  const [state, _setState] = useState (() => (
     getLocalStorage (key, initValue)
   ));
 
-  const setValue = (value) => {
-    setValue_ (value);
+  const setState = (value) => {
+    _setState (value);
     setLocalStorage (key, value);
   };
 
-  return [value, setValue];
+  return [state, setState];
 };
 
 /**************************************/
-export default useLocalStorage;
+export default useLocalStorageState;

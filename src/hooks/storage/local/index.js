@@ -5,17 +5,17 @@
 /// imports ///
 import getLocalStorage from './getLocalStorage';
 import setLocalStorage from './setLocalStorage';
-import useLocalStorage from './useLocalStorage';
+import useLocalStorageState from './useLocalStorageState';
 
 /// exports ///
-export default {
-  getLocalStorage,
-  setLocalStorage,
-  useLocalStorage,
-};
-
 export {
   getLocalStorage,
   setLocalStorage,
-  useLocalStorage,
+  useLocalStorageState,
+};
+
+export default {
+  get : getLocalStorage,
+  set : setLocalStorage,
+  useState : useLocalStorageState,
 };
