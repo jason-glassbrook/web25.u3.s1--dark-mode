@@ -1,10 +1,16 @@
+/// external modules ///
 import React from "react";
+
+/// internal modules ///
 import Chart from "./Chart";
 
+/***************************************
+  COMPONENT
+***************************************/
 const Charts = ({ coinData }) => {
   return (
     <div className="charts">
-      {coinData.map(coin => (
+      {coinData.map (coin => (
         <div className="chart__container" key={coin.name}>
           <h2 className="coin__title">{coin.name}</h2>
           <h4 className="coin__symbol">{coin.symbol}</h4>
@@ -17,4 +23,6 @@ const Charts = ({ coinData }) => {
     </div>
   );
 };
+
+/**************************************/
 export default Charts;
